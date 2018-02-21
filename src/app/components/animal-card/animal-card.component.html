@@ -1,4 +1,5 @@
 <div class="box">
   {{ animal }}
   <button (click)="handleDeleteClick()">Delete</button>
+  <a [routerLink]="['/animal',animal]">Details</a>
 </div>
