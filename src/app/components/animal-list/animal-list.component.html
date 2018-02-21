@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let animal of animals">
+    <app-animal-card [animal]="animal" (delete)="handleDelete($event)"></app-animal-card>
+  </li>
+</ul> 

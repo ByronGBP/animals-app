@@ -1,0 +1,7 @@
+<form>
+  <input type="text" [(ngModel)]="name" name="name" required #nameField="ngModel"> 
+  <button (click)="handleClick()">New</button>
+  <p>Input valid: {{ nameField.valid }}</p>
+  <p>error required: {{nameField.errors.required}}</p>
+
+</form>
